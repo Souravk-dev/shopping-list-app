@@ -1,0 +1,28 @@
+.shop-list-style{
+    border: solid;
+    padding: 30px;
+    margin: 5%;
+}
+
+.ls-style{
+    list-style-type:circle;
+}
+
+.list-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.delete-btn{
+    size: 15px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(255, 240, 235);
+}
+
+.delete-btn:hover{
+    transition-duration: .5s;
+    background-color: rgb(255, 7, 7);
+}

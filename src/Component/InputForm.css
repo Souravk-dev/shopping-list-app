@@ -1,0 +1,8 @@
+.text-area-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: dotted;
+    flex-direction: column;
+}
+
