@@ -11,10 +11,20 @@ const InputForm = (props) => {
   const [inputList ,setinputList] = useState("");
   const [Items, setItems] = useState([]);
 
+
+/* This function will get value from input tag */
+  
   const itemEvent= (event) => {
     setinputList(event.target.value);
   }
-  const listOfItem = () => {
+
+
+/* This function adds items to render in list*/
+
+const listOfItem = () => {
+   if (inputList === "" || inputList.length <= 0) {
+      return;
+    }
     let item = {
       id : Math.random() * 0.5,
       name : inputList
@@ -24,9 +34,11 @@ const InputForm = (props) => {
     });
     setinputList("");
   }
+ 
 
+/*This fuction will delete items from list  */
+  
   const deleteItems = (id) => {
-
   const newArr = Items.filter(el=>el.id !==id)
   setItems(newArr)
 
